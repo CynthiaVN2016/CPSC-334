@@ -15,4 +15,5 @@ for i in make_pi():
 
 my_array = my_array[:1] + ['.'] + my_array[1:]
 big_string = "".join(my_array)
-print "here is a big string:\n %s" % big_string 
+# print "here is a big string:\n %s" % big_string 
+print big_string[-1]
