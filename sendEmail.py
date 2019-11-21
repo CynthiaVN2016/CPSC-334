@@ -1,15 +1,14 @@
-import smtplib, ssl, socket
+import smtplib, ssl, socket, sys
 
 port = 465  # For SSL
-password = input("Type your password and press enter: ")
+password = 
 sender_email = "animeonveoh@gmail.com"
 receiver_email = "cynthiavu@gmail.com"
-hostname = socket.gethostname()
-IPAddr = socket.gethostbyname(hostname)
+IPAddr = sys.argv[2]
 message = """\
 Subject: Hi there
 
-The name is: """ + hostname + "\n" + "The current IP address is: " + IPAddr
+The current IP address is: """ + IPAddr
 
 # Create a secure SSL context
 context = ssl.create_default_context()
